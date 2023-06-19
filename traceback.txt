@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 34, in script
+    $ config.sound_volume = 0.5
+  File "game/script.rpy", line 34, in <module>
+    $ config.sound_volume = 0.5
+Exception: config.sound_volume is not a known configuration variable.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 34, in script
+    $ config.sound_volume = 0.5
+  File "C:\Program Files\renPy 8.1.1\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Program Files\renPy 8.1.1\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 34, in <module>
+    $ config.sound_volume = 0.5
+  File "C:\Program Files\renPy 8.1.1\renpy\defaultstore.py", line 101, in __setattr__
+    raise Exception('config.%s is not a known configuration variable.' % (name))
+Exception: config.sound_volume is not a known configuration variable.
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.1.1.23060707
+AI 0.1
+Mon Jun 19 18:13:31 2023
