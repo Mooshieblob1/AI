@@ -2,11 +2,14 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-
+init -1 python:
+    config.has_autosave = False
+    config.has_quicksave = False
 define a = Character("Annabelle", images='annabelle')
 define b = Character("Emma", images='emma')
 image annabelle = im.Scale("Annabelle.png", 667, 1000)
 image bg extbeach = "bg1.png"
+image bg extstreet = "bg2.png"
 
 # The game starts here.
 
@@ -52,6 +55,8 @@ label start:
     show annabelle at walk_and_fade
 
     "Annabelle proceeds to look for the others."
+
+    scene bg extstreet
 
     "Meanwhile..."
 
